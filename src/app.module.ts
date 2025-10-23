@@ -9,11 +9,9 @@ import mailConfig from './mail/config/mail.config';
 import fileConfig from './files/config/file.config';
 import facebookConfig from './auth-facebook/config/facebook.config';
 import googleConfig from './auth-google/config/google.config';
-import appleConfig from './auth-apple/config/apple.config';
 import path from 'path';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { AuthAppleModule } from './auth-apple/auth-apple.module';
 import { AuthFacebookModule } from './auth-facebook/auth-facebook.module';
 import { AuthGoogleModule } from './auth-google/auth-google.module';
 import { HeaderResolver, I18nModule } from 'nestjs-i18n';
@@ -24,6 +22,7 @@ import { DataSource, DataSourceOptions } from 'typeorm';
 import { AllConfigType } from './config/config.type';
 import { SessionModule } from './session/session.module';
 import { MailerModule } from './mailer/mailer.module';
+import { TemplateModule } from './template/template.module';
 
 const infrastructureDatabaseModule = TypeOrmModule.forRootAsync({
   useClass: TypeOrmConfigService,
@@ -44,7 +43,6 @@ const infrastructureDatabaseModule = TypeOrmModule.forRootAsync({
         fileConfig,
         facebookConfig,
         googleConfig,
-        appleConfig,
       ],
       envFilePath: ['.env'],
     }),
@@ -77,10 +75,10 @@ const infrastructureDatabaseModule = TypeOrmModule.forRootAsync({
     AuthModule,
     AuthFacebookModule,
     AuthGoogleModule,
-    AuthAppleModule,
     SessionModule,
     MailModule,
     MailerModule,
+    TemplateModule,
     HomeModule,
   ],
 })

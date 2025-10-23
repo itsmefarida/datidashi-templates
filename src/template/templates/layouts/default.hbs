@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/themes/{{theme}}/style.css">
+    {{#if styles}}
+    {{#each styles}}
+    <link rel="stylesheet" href="{{this}}">
+    {{/each}}
+    {{/if}}
+</head>
+<body class="theme-{{theme}}">
+    <header>
+        {{region "header"}}
+    </header>
+
+    <nav>
+        {{region "navigation"}}
+    </nav>
+
+    <main>
+        {{region "content"}}
+    </main>
+
+    <aside>
+        {{region "sidebar"}}
+    </aside>
+
+    <footer>
+        {{region "footer"}}
+    </footer>
+
+    {{#if scripts}}
+    {{#each scripts}}
+    <script src="{{this}}"></script>
+    {{/each}}
+    {{/if}}
+</body>
+</html>

@@ -1,0 +1,350 @@
+/* Dark Theme Styles for All Pages */
+
+/* Light Theme (Default) */
+body {
+  background-color: #FFFFFF;
+  color: #333333;
+}
+
+/* Dark Theme */
+body.dark-theme {
+  background-color: #2D3748;
+  color: #F7FAFC;
+}
+
+/* Dark Theme Overrides for Global Elements */
+body.dark-theme .header {
+  background: linear-gradient(135deg, #2D3748 0%, #1A202C 100%);
+}
+
+body.dark-theme .footer {
+  background: #1A202C;
+  color: #CBD5E0;
+}
+
+body.dark-theme .footer-section a {
+  color: #CBD5E0;
+}
+
+body.dark-theme .footer-section a:hover {
+  color: #F7FAFC;
+}
+
+body.dark-theme .footer-bottom {
+  color: #A0AEC0;
+}
+
+body.dark-theme .navigation {
+  background: #2D3748;
+  border-bottom: 1px solid #4A5568;
+}
+
+body.dark-theme .nav-link {
+  color: #CBD5E0;
+}
+
+body.dark-theme .nav-link:hover {
+  color: #F7FAFC;
+  background: #4A5568;
+}
+
+body.dark-theme .nav-link.active {
+  color: #F7FAFC;
+  background: linear-gradient(135deg, #4A5568 0%, #2D3748 100%);
+}
+
+body.dark-theme .card {
+  background: #4A5568;
+  color: #F7FAFC;
+}
+
+body.dark-theme .card-header {
+  border-bottom: 1px solid #718096;
+  background: #2D3748;
+}
+
+body.dark-theme .card-footer {
+  border-top: 1px solid #718096;
+  background: #2D3748;
+}
+
+body.dark-theme .form-control {
+  background: #4A5568;
+  border-color: #718096;
+  color: #F7FAFC;
+}
+
+body.dark-theme .form-control:focus {
+  border-color: #6366f1;
+  background: #4A5568;
+}
+
+body.dark-theme .form-control::placeholder {
+  color: #A0AEC0;
+}
+
+body.dark-theme .btn-secondary {
+  background: #4A5568;
+  color: #F7FAFC;
+  border-color: #718096;
+}
+
+body.dark-theme .btn-secondary:hover {
+  background: #718096;
+}
+
+/* About Page Dark Theme */
+body.dark-theme .about-hero {
+  background: linear-gradient(135deg, #2D3748 0%, #1A202C 100%);
+}
+
+body.dark-theme .mission {
+  background: #2D3748;
+}
+
+body.dark-theme .mission-text h2 {
+  color: #F7FAFC;
+}
+
+body.dark-theme .mission-text p {
+  color: #CBD5E0;
+}
+
+body.dark-theme .values {
+  background: #4A5568;
+}
+
+body.dark-theme .values h2 {
+  color: #F7FAFC;
+}
+
+body.dark-theme .value-card {
+  background: #2D3748;
+  color: #F7FAFC;
+}
+
+body.dark-theme .value-card h3 {
+  color: #F7FAFC;
+}
+
+body.dark-theme .value-card p {
+  color: #CBD5E0;
+}
+
+body.dark-theme .team {
+  background: #4A5568;
+}
+
+body.dark-theme .team h2 {
+  color: #F7FAFC;
+}
+
+body.dark-theme .team-member {
+  background: #2D3748;
+  color: #F7FAFC;
+}
+
+body.dark-theme .team-member h3 {
+  color: #F7FAFC;
+}
+
+body.dark-theme .member-role {
+  color: #6366f1;
+}
+
+body.dark-theme .member-bio {
+  color: #CBD5E0;
+}
+
+body.dark-theme .about-cta {
+  background: linear-gradient(135deg, #1A202C 0%, #2D3748 100%);
+}
+
+body.dark-theme .about-cta h2 {
+  color: #F7FAFC;
+}
+
+body.dark-theme .about-cta p {
+  color: #CBD5E0;
+}
+
+/* Contact Page Dark Theme */
+body.dark-theme .contact-hero {
+  background: linear-gradient(135deg, #2D3748 0%, #1A202C 100%);
+}
+
+body.dark-theme .contact-form-section {
+  background: #2D3748;
+}
+
+body.dark-theme .contact-info h2 {
+  color: #F7FAFC;
+}
+
+body.dark-theme .contact-info > p {
+  color: #CBD5E0;
+}
+
+body.dark-theme .contact-item {
+  background: #4A5568;
+  color: #F7FAFC;
+}
+
+body.dark-theme .contact-item h3 {
+  color: #F7FAFC;
+}
+
+body.dark-theme .contact-item p {
+  color: #CBD5E0;
+}
+
+body.dark-theme .contact-form {
+  background: #4A5568;
+  color: #F7FAFC;
+}
+
+body.dark-theme .contact-form h2 {
+  color: #F7FAFC;
+}
+
+body.dark-theme .form-group label {
+  color: #F7FAFC;
+}
+
+body.dark-theme .map-section {
+  background: #4A5568;
+}
+
+body.dark-theme .map-section h2 {
+  color: #F7FAFC;
+}
+
+body.dark-theme .map-placeholder {
+  background: #2D3748;
+  border-color: #718096;
+}
+
+body.dark-theme .map-content {
+  color: #CBD5E0;
+}
+
+body.dark-theme .map-content h3 {
+  color: #F7FAFC;
+}
+
+/* Dashboard Page Dark Theme */
+body.dark-theme .dashboard-header {
+  background: linear-gradient(135deg, #2D3748 0%, #1A202C 100%);
+}
+
+body.dark-theme .user-info h1 {
+  color: #F7FAFC;
+}
+
+body.dark-theme .user-info p {
+  color: #CBD5E0;
+}
+
+body.dark-theme .stats-section {
+  background: #2D3748;
+}
+
+body.dark-theme .stat-card {
+  background: #4A5568;
+  color: #F7FAFC;
+}
+
+body.dark-theme .stat-value {
+  color: #F7FAFC;
+}
+
+body.dark-theme .stat-label {
+  color: #CBD5E0;
+}
+
+body.dark-theme .dashboard-content {
+  background: #4A5568;
+}
+
+body.dark-theme .dashboard-card {
+  background: #2D3748;
+  color: #F7FAFC;
+}
+
+body.dark-theme .card-header h3 {
+  color: #F7FAFC;
+}
+
+body.dark-theme .activity-item,
+body.dark-theme .notification-item {
+  background: #4A5568;
+  color: #F7FAFC;
+}
+
+body.dark-theme .activity-content p,
+body.dark-theme .notification-content p {
+  color: #F7FAFC;
+}
+
+body.dark-theme .activity-time,
+body.dark-theme .notification-time {
+  color: #CBD5E0;
+}
+
+body.dark-theme .action-btn {
+  background: #4A5568;
+  color: #F7FAFC;
+  border-color: #718096;
+}
+
+body.dark-theme .action-btn:hover {
+  background: #718096;
+}
+
+body.dark-theme .chart-placeholder {
+  background: #2D3748;
+  border-color: #718096;
+}
+
+body.dark-theme .chart-content {
+  color: #CBD5E0;
+}
+
+body.dark-theme .chart-content h4 {
+  color: #F7FAFC;
+}
+
+body.dark-theme .notification-item.unread {
+  background: #4A5568;
+  border-left-color: #ffffff;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  z-index: 10;
+}
+
+.theme-toggle .btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9rem;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+body.dark-theme .theme-toggle .btn {
+  background: rgba(74, 85, 104, 0.8);
+  color: #F7FAFC;
+  border-color: #718096;
+}
+
+.btn-sm {
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9rem;
+  border-radius: 25px;
+}
